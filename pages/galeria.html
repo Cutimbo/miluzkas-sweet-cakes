@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/0e1b429e3c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <title>Miluzka's Sweet Cakes | GALERIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <!--Logo-->
+        <a href="#" class="navbar-brand navbar-logo d-flex align-items-center">
+          <img src="../img/Logo.png" alt="logo Miluzka's Sweet Cakes">
+          <span class="navbar-logo-text ms-3">Miluzka's <br> Sweet Cakes</span>
+        </a>
+
+        <!-- Botón hamburguesa-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Lista del menu-->
+        <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+
+          <ul class="navbar-menu mx-auto">
+
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="../pages/nosotros.html">Nosotros</a></li>
+
+            <!--Productos dropdown-->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button"
+                data-bs-toggle="dropdown">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/productos.html#tortas">Tortas</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#galletas">Galletas</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#cupcakes">Cupcakes</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#packs">Packs</a></li>
+              </ul>
+            </li>
+
+            <!--Galeria-->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/galeria.html" role="button"
+                data-bs-toggle="dropdown">Galeria</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/galeria.html#galeria">Fotos</a></li>
+                <li><a class="dropdown-item" href="../pages/galeria.html#video">Video</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+          </ul>
+
+          <!--Iconos-->
+          <div class="d-flex align-items-center gap-3 navbar-action">
+            <i class="fa-solid fa-circle-user"><span>Iniciar sesion</span></i>
+            <i class="fa-solid fa-basket-shopping"><span>Carrito</span></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!-- GALERIA -->
+    <section id="galeria" class="galeria py-5 px-4 px-lg-5">
+      <div class="container">
+        <h2 class="galeria-title text-center mb-3">Galería de Creaciones</h2>
+        <p class="text-center galeria-subtitle mb-5">Explora nuestras creaciones por categoría</p>
+
+        <!-- Botones filtro -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+          <button class="btn galeria-filtro-btn active" data-filtro="todos">Todos</button>
+          <button class="btn galeria-filtro-btn" data-filtro="tortas">Tortas</button>
+          <button class="btn galeria-filtro-btn" data-filtro="galletas">Galletas</button>
+          <button class="btn galeria-filtro-btn" data-filtro="cupcakes">Cupcakes</button>
+          <button class="btn galeria-filtro-btn" data-filtro="packs">Packs</button>
+        </div>
+
+        <!-- Grilla de imágenes -->
+        <div class="row g-4" id="galeriaGrid">
+
+          <!--TORTAS-->
+
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="tortas">
+            <img src="../img/img galeria/torta1.jpeg" alt="Torta personalizada"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="tortas">
+            <img src="../img/img galeria/torta2.png" alt="Torta personalizada 2"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="tortas">
+            <img src="../img/img galeria/torta3.jpg" alt="Torta personalizada 3"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="tortas">
+            <img src="../img/img galeria/torta4.jpg" alt="Torta personalizada 4"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+
+          <!--GALLETAS-->
+
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="galletas">
+            <img src="../img/img galeria/galletas1.jpeg" alt="Galletas decoradas"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="galletas">
+            <img src="../img/img galeria/galletas2.jpg" alt="Galletas decoradas"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="galletas">
+            <img src="../img/img galeria/galletas3.jpg" alt="Galletas decoradas"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="galletas">
+            <img src="../img/img galeria/galletas4.jpg" alt="Galletas decoradas"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+
+          <!--CUPCACKES-->
+
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="cupcakes">
+            <img src="../img/img galeria/cupcakes1.jpg" alt="Cupcakes" class="w-100 rounded-4 shadow-sm galeria-foto"
+              data-bs-toggle="modal" data-bs-target="#lightboxModal" style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="cupcakes">
+            <img src="../img/img galeria/cupcake2.jpg" alt="Cupcakes" class="w-100 rounded-4 shadow-sm galeria-foto"
+              data-bs-toggle="modal" data-bs-target="#lightboxModal" style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="cupcakes">
+            <img src="../img/img galeria/cupcake3.jpg" alt="Cupcakes" class="w-100 rounded-4 shadow-sm galeria-foto"
+              data-bs-toggle="modal" data-bs-target="#lightboxModal" style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="cupcakes">
+            <img src="../img/img galeria/cupcackes4.jpg" alt="Cupcakes" class="w-100 rounded-4 shadow-sm galeria-foto"
+              data-bs-toggle="modal" data-bs-target="#lightboxModal" style="cursor:pointer;">
+          </div>
+
+          <!--PACKS-->
+
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="packs">
+            <img src="../img/img galeria/Packs1.jpeg" alt="Pack de postres"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="packs">
+            <img src="../img/img galeria/packs2.jpeg" alt="Pack de postres"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="packs">
+            <img src="../img/img galeria/pack3.jpeg" alt="Pack de postres"
+              class="w-100 rounded-4 shadow-sm galeria-foto" data-bs-toggle="modal" data-bs-target="#lightboxModal"
+              style="cursor:pointer;">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 galeria-item" data-categoria="packs">
+            <img src="../img/img galeria/pack4.jpg" alt="Pack de postres" class="w-100 rounded-4 shadow-sm galeria-foto"
+              data-bs-toggle="modal" data-bs-target="#lightboxModal" style="cursor:pointer;">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-transparent border-0">
+            <button type="button" class="btn-close btn-close-white ms-auto me-2 mt-2" data-bs-dismiss="modal"></button>
+            <img src="" id="lightboxImg" class="w-100 rounded-4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Video-->
+    <section id="video" class="video-promocional py-5 px-4 px-lg-5">
+      <div class="container text-center">
+        <h2 class="video-promocional-title mb-4">Nuestro Proceso de Elaboración</h2>
+        <div class="row justify-content-center">
+
+          <div class="ratio ratio-16x9 rounded-4 shadow mx-auto" style="max-width: 900px;">
+            <iframe src="https://www.youtube.com/embed/HjbssysN6aQ" title="Video de elaboración de tortas"
+              allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <h5 class="footer-subtitle">Miluzka's Sweet Cakes</h5>
+      <p class="footer-text">&copy; Sebastian Miguel Cutimbo Huarcaya- Examen Integral - Diseño Web 19 de Julio del 2026</p>
+      <hr class="footer-hr mt-4">
+      <p class="text-center footer-text mb-0">Todos los derechos reservados &copy; 2026 Miluzka's Sweet Cakes</p>
+    </div>
+  </footer>
+
+  <!--Codigo Java-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+  <script src="../Js/script.js"></script>
+
+</body>
+
+</html>

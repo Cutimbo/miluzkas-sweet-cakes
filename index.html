@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/0e1b429e3c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <title>Miluzka's Sweet Cakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <!--Logo-->
+        <a href="#" class="navbar-brand navbar-logo d-flex align-items-center">
+          <img src="img/Logo.png" alt="logo Miluzka's Sweet Cakes">
+          <span class="navbar-logo-text ms-3">Miluzka's <br> Sweet Cakes</span>
+        </a>
+
+        <!-- Botón hamburguesa-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Lista del menu-->
+        <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+
+          <ul class="navbar-menu mx-auto">
+
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item"><a href="pages/nosotros.html">Nosotros</a></li>
+
+            <!--Productos dropdown-->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button"
+                data-bs-toggle="dropdown">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/productos.html#tortas">Tortas</a></li>
+                <li><a class="dropdown-item" href="pages/productos.html#galletas">Galletas</a></li>
+                <li><a class="dropdown-item" href="pages/productos.html#cupcakes">Cupcakes</a></li>
+                <li><a class="dropdown-item" href="pages/productos.html#packs">Packs</a></li>
+              </ul>
+            </li>
+
+            <!--Galeria-->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="pages/galeria.html" role="button"
+                data-bs-toggle="dropdown">Galeria</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/galeria.html#galeria">Fotos</a></li>
+                <li><a class="dropdown-item" href="pages/galeria.html#video">Video</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Cotización</a></li>
+          </ul>
+
+          <!--Iconos-->
+          <div class="d-flex align-items-center gap-3 navbar-action">
+            <i class="fa-solid fa-circle-user"><span>Iniciar sesion</span></i>
+            <i class="fa-solid fa-basket-shopping"><span>Carrito</span></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- Seccion principal - HERO-CARROUSEL -->
+    <section id="heroCarousel" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner h-100">
+
+        <!-- Slide 1: Bienvenida -->
+        <div class="carousel-item active " style="background-image:url('img/img inicio/corousel 1.jpeg');">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center position-relative">
+            <div class="text-white col-lg-7">
+              <!-- BADGE -->
+              <span class="badge hero-promo-badge mb-3 px-3 py-2">🎂 Personalización 100% a tu gusto</span>
+
+              <h1 class="hero-title">Bienvenidos a <br><span class="hero-badge"><b>Miluzka's Sweet Cakes</b></span>
+              </h1>
+              <h2 class="hero-subtitle">Endulzamos tus celebraciones con <br>diseños únicos y sabores especiales.</h2>
+              <h3 class="hero-text">¡No esperes más y pídelo aquí!</h3>
+              <a href="pages/productos.html#productos" class="hero-btn btn">Ver productos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: PENDIENTE - reemplazar background-image cuando tengas la foto -->
+        <div class="carousel-item" style="background-image:url('img/img inicio/carousel\ 2.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center position-relative">
+            <div class="text-white col-lg-7">
+              <h1 class="hero-title">Tortas <span class="hero-badge"><b>100% personalizadas</b></span></h1>
+              <h2 class="hero-subtitle">Diseños únicos para cada celebración especial.</h2>
+              <a href="pages/galeria.html" class="hero-btn btn">Ver galería</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: PENDIENTE - reemplazar background-image cuando tengas la foto -->
+        <div class="carousel-item" style="background-image:url('img/img\ inicio/carousel slide 3.png');">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center position-relative">
+            <div class="text-white col-lg-7">
+              <h1 class="hero-title">Endulza tu <span class="hero-badge"><b>próxima ocasión</b></span></h1>
+              <h2 class="hero-subtitle">Cupcakes, galletas y packs para compartir.</h2>
+              <a href="pages/contacto.html#contactanos" class="hero-btn btn">Solicita tu pedido</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </section>
+    <!-- ================= CONTADOR ================= -->
+    <section class="contador py-5 px-4 px-lg-5 text-center">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <i class="fa-solid fa-cake-candles contador-icono"></i>
+            <h2 class="contador-numero" data-target="500">0</h2>
+            <p class="contador-label">Tortas entregadas</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="fa-solid fa-calendar-days contador-icono"></i>
+            <h2 class="contador-numero" data-target="9">0</h2>
+            <p class="contador-label">Años de experiencia</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="fa-solid fa-heart contador-icono"></i>
+            <h2 class="contador-numero" data-target="200">0</h2>
+            <p class="contador-label">Clientes felices</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="fa-solid fa-palette contador-icono"></i>
+            <h2 class="contador-numero" data-target="30">0</h2>
+            <p class="contador-label">Diseños exclusivos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--DESTACADOS  -->
+    <section class="destacados py-5 px-4 px-lg-5">
+      <div class="container">
+        <h2 class="text-center mb-5 destacados-title">Nuestros favoritos</h2>
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="destacado-card h-100 bg-white border rounded-4 overflow-hidden shadow-sm text-center">
+              <img src="img/img inicio/destacado torta.jpg" alt="Torta personalizada" class="w-100">
+              <div class="p-3">
+                <span class="badge bg-dark mb-2">Más pedido</span>
+                <h3 class="destacado-title">Tortas personalizadas</h3>
+                <a href="pages/productos.html#tortas" class="btn destacado-btn rounded-pill mt-2">Ver más</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="destacado-card h-100 bg-white border rounded-4 overflow-hidden shadow-sm text-center">
+              <img src="img/img inicio/destacado cupcakes.jpg" alt="Cupcakes personalizados" class="w-100">
+              <div class="p-3">
+                <span class="badge bg-dark mb-2">Nuevo</span>
+                <h3 class="destacado-title">Cupcakes</h3>
+                <a href="pages/productos.html#cupcakes" class="btn destacado-btn rounded-pill mt-2">Ver más</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="destacado-card h-100 bg-white border rounded-4 overflow-hidden shadow-sm text-center">
+              <img src="img/img inicio/destacado postres.jpg" alt="Packs de postres" class="w-100">
+              <div class="p-3">
+                <span class="badge bg-dark mb-2">Ideal para compartir</span>
+                <h3 class="destacado-title">Packs de postres</h3>
+                <a href="pages/productos.html#packs" class="btn destacado-btn rounded-pill mt-2">Ver más</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--ALERT-->
+    <section class="container my-4" data-aos="fade-up">
+      <div class="alert alert-warning d-flex align-items-center shadow-sm rounded-4" role="alert">
+        <i class="fa-solid fa-bullhorn fs-3 me-3"></i>
+        <div>
+          <strong>Tener en cuenta:</strong> Los pedidos de moldes enteros y otros productos realizados a través de la
+          página web, podrán ser entregados a partir de 48 horas de realizado el pedido. En caso requiera una entrega
+          en
+          menor tiempo, deberá hacer el pedido al 977 630 745 para consultar disponibilidad. El servicio de delivery
+          de
+          moldes enteros tendrá un costo de envío según distrito.
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Derechos reservados -->
+        <div class="col-12 col-md-4 text-center">
+          <h5 class="footer-subtitle">Miluzka's Sweet Cakes</h5>
+          <p class="footer-text">&copy; Sebastian Miguel Cutimbo Huarcaya <br> Examen Integral - Diseño Web <br> 19 de Julio del
+            2026</p>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-12 col-md-4 text-center">
+          <h5 class="footer-subtitle">Contacto</h5>
+          <ul class="list-unstyled footer-text">
+            <li><i class="fa-solid fa-location-dot me-2"></i>Calle Fuente del Maestre K-9, Ate 15012</li>
+            <li class="mt-2"><i class="fa-solid fa-phone me-2"></i>+51 977-630-745</li>
+            <li class="mt-2"><i class="fa-solid fa-envelope me-2"></i>miluzkasweetcakes@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-12 col-md-4 text-center">
+          <h5 class="footer-subtitle">Síguenos</h5>
+          <div class="d-flex justify-content-center gap-3 footer-redes">
+            <a href="https://www.facebook.com/Miluzkah" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miluzkasweetcakes/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@miluzkasweetcakes" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-hr mt-4">
+      <p class="text-center footer-text mb-0">Todos los derechos reservados &copy; 2026 Miluzka's Sweet Cakes</p>
+
+    </div>
+  </footer>
+
+  <!--Codigo Java-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
